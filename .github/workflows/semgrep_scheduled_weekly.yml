@@ -4,8 +4,6 @@ on:
   # Scan on-demand through GitHub Actions interface:
   workflow_dispatch: {}
   # Schedule the CI job (this method uses cron syntax):
-  schedule:
-    - cron: '10 02 * * 6' # Sets Semgrep to scan every Saturday at 02:10 UTC.
 
 jobs:
   get-list-of-repos-and-perform-semgrep-scan:
